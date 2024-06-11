@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<!--this is a comment , we use short cut CTRL + / to add a comment--> 
+<!-- this tells the browser about the type of document to expect -->
+<html>
+    <head>
+        <!-- meta tag just provides info about the data not exactly the data, it tells about character set ,description, author , keyword etc -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>To Do List App</title>
+        <!-- Link tag defines the relationship between the current document and an external resource -->
+         <!-- these are mostly used to link external style sheets such as css or sass files -->
+         <!-- here we are linking stylesheet named style.css with this html document by using link -->
+         <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+<!-- shortcut to create div class is - add . then type name of the div press tab -->
+ <div class="container">
+    <div class="todo-app">
+            <h2>To Do List<img src="Images/logo.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="add your task here">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li> -->
+                <!-- to create multiple lists here we dp li*n where n is the number of times you need the list or item -->
+            </ul>
+
+            
+    </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+
+
+</html>
+
+<!-- <body>
+<button type = "button"
+onclick="document.getElementById('demo').innerHTML = Date()"> <!--fetches the content with id demo and changes the innerHTML content to Date()-->
+<!-- Click for date
+</button>
+<h3 id = 'demo'>Before Button is clicked this content will be Displayed the inner content of h3 tag with id demo and once you click the button this will be replaced by the Date() ,which prints the current date and time </h3>  -->
+
+<!-- The innerHTML property is part of the Document Object Model (DOM) that allows Javascript code to manipulate a website being displayed. Specifically, it allows reading and replacing everything within a given DOM element (HTML tag).
+However, DOM manipulations using innerHTML are slower and more failure-prone than manipulations based on individual DOM objects -->
